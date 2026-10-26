@@ -1,0 +1,6 @@
+mcp==1.10.1
+lxml
+beautifulsoup4
+google-adk
+python-dotenv
+google-cloud-logging
