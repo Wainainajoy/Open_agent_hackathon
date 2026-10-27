@@ -11,7 +11,7 @@ if not google_maps_api_key:
     print("WARNING: GOOGLE_MAPS_API_KEY is not set. Please set it as an environment variable or update it in the script.")
 
 root_agent = LlmAgent(
-    model=os.getenv("MODEL"),
+    model=os.getenv("METERLESS_MODEL", "meterless/auto"),
     name='maps_assistant_agent',
     instruction='Help the user with mapping, directions, and finding places using Google Maps tools specifically for Nyeri County in Kenya. Be as detailed as possible and offer step-by-step guidance always when asked for directions or location information.',
 
